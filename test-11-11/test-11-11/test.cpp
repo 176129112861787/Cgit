@@ -1,299 +1,298 @@
-//²ÂÊı×ÖÓÎÏ·
-//#include<stdio.h>
-//#include<windows.h>
-//#include<stdlib.h>
-//#include <time.h>
-//int main()
-//{
-//	int i; 
-//	int r;
-//	srand((unsigned)time(NULL));
-//	r = rand() % 100 + 1;
-//	
-//	while (1)
-//	{
-//		printf("ÇëÊäÈëÄãÒª²ÂµÄÊı×Ö£º\n");
-//		scanf_s("%d", &i);
-//		if (i == r)
-//		{
-//			printf("¹§Ï²Äã£¬²Â¶ÔÁË\n");
-//			break;
-//		}
-//		if (i > r)
-//		{
-//			printf("²Â´óÁË£¡\n");
-//		}
-//		else
-//		{
-//			printf("²ÂĞ¡ÁË£¡\n");
-//		}
-//	}
-//	system("pause");
-//	return 0;
-//}
+çŒœæ•°å­—æ¸¸æˆ
+#include<stdio.h>
+#include<windows.h>
+#include<stdlib.h>
+#include <time.h>
+int main()
+{
+	int i; 
+	int r;
+	srand((unsigned)time(NULL));
+	r = rand() % 100 + 1;
+	
+	while (1)
+	{
+		printf("è¯·è¾“å…¥ä½ è¦çŒœçš„æ•°å­—ï¼š\n");
+		scanf_s("%d", &i);
+		if (i == r)
+		{
+			printf("æ­å–œä½ ï¼ŒçŒœå¯¹äº†\n");
+			break;
+		}
+		if (i > r)
+    {
+			printf("çŒœå¤§äº†ï¼\n");
+		}
+		else
+		{
+			printf("çŒœå°äº†ï¼\n");
+		}
+	}
+	system("pause");
+	return 0;
+}
 
-//¶ş·Ö·¨ÔÚÊı×éÖĞ²éÕÒÔªËØ
-//#include<stdio.h>
-//#include<windows.h>
-//int binary_search(int arr[], int key, int left, int right)
-//{
-//	while (left <= right)
-//	{
-//        int mid = left + (right - left);
-//	    if (key > arr[mid])
-//	    {
-//		   left = mid + 1;
-//	    }
-//	    else if (key < arr[mid])
-//	    {
-//		   right = mid - 1;
-//	    }
-//		else
-//		{
-//			return mid;
-//		}
-//	}
-//	return -1;
-//}
-//int main()
-//{
-//	int arr[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-//	int left = 0;
-//	int ret = 0;
-//	int sz = 0;
-//	int k = 8;
-//	sz = sizeof(arr) / sizeof(arr[0]);
-//	int right = sz - 1;
-//	ret=binary_search(arr, k, left, right);
-//	if (ret == -1)
-//	{
-//      printf("ÕÒ²»µ½");
-//	}
-//	else
-//	{
-//      printf("ÕÒµ½ÁË£º%d", ret);
-//	}
-//	system("pause");
-//	return 0;
-//}
+äºŒåˆ†æ³•åœ¨æ•°ç»„ä¸­æŸ¥æ‰¾å…ƒç´ 
+#include<stdio.h>
+#include<windows.h>
+int binary_search(int arr[], int key, int left, int right)
+{
+	while (left <= right)
+	{
+        int mid = left + (right - left);
+	    if (key > arr[mid])
+	    {
+		   left = mid + 1;
+	    }
+	    else if (key < arr[mid])
+	    {
+		   right = mid - 1;
+	    }
+		else
+		{
+       return mid;
+		}
+	}
+	return -1;
+}
+int main()
+{
+	int arr[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+	int left = 0;
+	int ret = 0;
+	int sz = 0;
+	int k = 8;
+	sz = sizeof(arr) / sizeof(arr[0]);
+	int right = sz - 1;
+	ret=binary_search(arr, k, left, right);
+	if (ret == -1)
+	{
+      printf("æ‰¾ä¸åˆ°");
+	}
+	else
+	{
+      printf("æ‰¾åˆ°äº†ï¼š%d", ret);
+	}
+	system("pause");
+	return 0;
+}
 
-//Ä£ÄâÃÜÂëÊäÈë
-//#include<stdio.h>
-//#include<windows.h>
-//int main()
-//{
-//	int i = 0;
-//	int m = 0;
-//	for (i = 1; i <= 3; i++)
-//	{
-//        printf("ÇëÊäÈëÃÜÂë£º");
-//	    scanf_s("%d", &m);
-//	    if (m == 1787)
-//	    {
-//		  printf("µÇÂ½³É¹¦\n");
-//		  break;
-//	    }
-//	}
-//	if (i > 3)
-//	{
-//		printf("ÃÜÂëÊäÈëÈı´Î¾ù²»ÕıÈ·£¬ÍË³ö³ÌĞò\n");
-//	}
-//	system("pause");
-//	return 0;
-//}
+æ¨¡æ‹Ÿå¯†ç è¾“å…¥
+#include<stdio.h>
+#include<windows.h>
+int main()
+{
+	int i = 0;
+	int m = 0;
+	for (i = 1; i <= 3; i++)
+	{
+        printf("è¯·è¾“å…¥å¯†ç ï¼š");
+	    scanf_s("%d", &m);
+	    if (m == 1787)
+	    {
+		  printf("ç™»é™†æˆåŠŸ\n");
+      break;
+	    }
+	}
+	if (i > 3)
+	{
+    printf("å¯†ç è¾“å…¥ä¸‰æ¬¡å‡ä¸æ­£ç¡®ï¼Œé€€å‡ºç¨‹åº\n");
+	}
+	system("pause");
+	return 0;
+}
 
-//½ÓÊÜ×Ö·û
-//#include<stdio.h>
-//#include<windows.h>
-//int main()
-//{
-//	char ch;
-//	printf("ÇëÊäÈë×Ö·û£º");
-//	ch=getchar();
-//	if (ch >= '0'&&ch <= '9');
-//	if (ch >= 'a'&&ch <= 'z')
-//	{
-//		ch -=  32;
-//		printf("%c\n", ch);
-//	}
-//	else if (ch >= 'A'&&ch <= 'Z')
-//	{
-//		ch +=  32;
-//		printf("%c\n", ch);
-//	}
-//	system("pause");
-//	return 0;
-//}
+æ¥å—å­—ç¬¦
+#include<stdio.h>
+#include<windows.h>
+int main()
+{
+	char ch;
+  printf("è¯·è¾“å…¥å­—ç¬¦ï¼š");
+  ch=getchar();
+	if (ch >= '0'&&ch <= '9');
+	if (ch >= 'a'&&ch <= 'z')
+	{
+		ch -=  32;
+	  printf("%c\n", ch);
+	}
+	else if (ch >= 'A'&&ch <= 'Z')
+	{
+		ch +=  32;
+		printf("%c\n", ch);
+	}
+	system("pause");
+	return 0;
+}
 
-//³Ë·¨¿Ú¾÷±í
-//#include<stdio.h>
-//#include<windows.h>
-//int main()
-//{
-//	int i = 0;
-//	int j = 0;
-//	int n = 0;
-//	printf("ÇëÊäÈë³Ë·¨¿Ú¾÷±íµÄĞĞÊı£¬ÁĞÊı£º");
-//	scanf_s("%d", &n);
-//	for (i = 1; i <= n; i++)
-//	{
-//		for (j = 1; j <= n; j++)
-//	    {
-//		   printf("%d*%d=%d  ",i,j,i*j);
-//	    }
-//		printf("\n");
-//	}
-//	
-//	system("pause");
-//	return 0;
-//}
+ä¹˜æ³•å£è¯€è¡¨
+#include<stdio.h>
+#include<windows.h>
+int main()
+{
+	int i = 0;
+	int j = 0;
+	int n = 0;
+	printf("è¯·è¾“å…¥ä¹˜æ³•å£è¯€è¡¨çš„è¡Œæ•°ï¼Œåˆ—æ•°ï¼š");
+	scanf_s("%d", &n);
+	for (i = 1; i <= n; i++)
+	{
+		for (j = 1; j <= n; j++)
+	    {
+		   printf("%d*%d=%d  ",i,j,i*j);
+	    }
+		printf("\n");
+	}
+	system("pause");
+	return 0;
+}
 
-//º¯ÊıÊµÏÖÁ½Êı½»»»
-//#include<stdio.h>
-//#include<windows.h>
-//void Swap(int* p1, int* p2)
-//{
-//	int temp;
-//	temp =* p1;
-//	* p1 =* p2;
-//	* p2 = temp;
-//}
-//int main()
-//{
-//	int x = 5;
-//	int y = 3;
-//	Swap(&x, &y);
-//	printf("x=%d,y=%d\n", x, y);
-//	system("pause");
-//	return 0;
-//}
+å‡½æ•°å®ç°ä¸¤æ•°äº¤æ¢
+#include<stdio.h>
+#include<windows.h>
+void Swap(int* p1, int* p2)
+{
+	int temp;
+	temp =* p1;
+	* p1 =* p2;
+	* p2 = temp;
+}
+int main()
+{
+	int x = 5;
+	int y = 3;
+	Swap(&x, &y);
+	printf("x=%d,y=%d\n", x, y);
+	system("pause");
+	return 0;
+}
 
-//º¯ÊıÅĞ¶ÏÈòÄê
-//#include<stdio.h>
-//#include<windows.h>
-//int is_year(int y)
-//{
-//	if ((y % 4 == 0 && y % 100 != 100) || (y % 400 == 0))
-//	{
-//		return 1;
-//	}
-//	else
-//	{
-//		return 0;
-//	}
-//}
-//int main()
-//{
-//	int n = 0;
-//	int year = 0;
-//	printf("ÇëÊäÈëÄê·İ£º");
-//	scanf_s("%d", &year);
-//	n = is_year(year);
-//	if (n == 1)
-//	{
-//		printf("%dÊÇÈòÄê\n",year);
-//	}
-//	else
-//	{
-//		printf("%d²»ÊÇÈòÄê\n",year);
-//	}
-//	system("pause");
-//	return 0;
-//}
+å‡½æ•°åˆ¤æ–­é—°å¹´
+#include<stdio.h>
+#include<windows.h>
+int is_year(int y)
+{
+	if ((y % 4 == 0 && y % 100 != 100) || (y % 400 == 0))
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+int main()
+{
+	int n = 0;
+	int year = 0;
+	printf("è¯·è¾“å…¥å¹´ä»½ï¼š");
+	scanf_s("%d", &year);
+	n = is_year(year);
+	if (n == 1)
+	{
+		printf("%dæ˜¯é—°å¹´\n",year);
+	}
+	else
+	{
+		printf("%dä¸æ˜¯é—°å¹´\n",year);
+	}
+	system("pause");
+	return 0;
+}
 
 
-//Êı×éº¯Êı
-//#include<stdio.h>
-//#include<windows.h>
-//void Init(int arr[], int sz)
-//{
-//    int i = 0;
-//	for (i = 0; i < sz; i++)
-//	{
-//		arr[i] = i;
-//	}
-//}
-//void empty(int arr[],int sz)
-//{
-//	int i = 0;
-//	for (i = 0; i < sz; i++)
-//	{
-//		arr[i] = 0;
-//	}
-//}
-//void print(int arr[],int sz)
-//{
-//	int i = 0;
-//	for (i = 0; i < sz; i++)
-//	{
-//		printf("%d", arr[i]);
-//	}
-//	printf("\n");
-//}
-//void reverse(int arr[], int sz)
-//{
-//	int left = 0;
-//	int right = sz - 1;
-//	while (left < right)
-//	{
-//		int temp;
-//		temp = arr[left];
-//		arr[left] = arr[right];
-//		arr[right] = temp;
-//		left++;
-//		right--;
-//	}
-//}
-//int main()
-//{
-//	int arr[10] = {0};
-//	int sz = sizeof(arr) / sizeof(arr[0]);
-//	Init(arr,sz);
-//	printf("³õÊ¼»¯µÄÊı×é£º\n");
-//	print(arr, sz);
-//	empty(arr,sz);
-//	printf("Çå¿ÕºóµÄÊı×é£º\n");
-//	print(arr, sz);
-//	printf("ÖØĞÂ³õÊ¼»¯Êı×é\n");
-//	Init(arr, sz);
-//	print(arr, sz);
-//	reverse(arr,sz);
-//	printf("ÄæÖÃµÄÊı×éÎª£º\n");
-//	print(arr, sz);
-//	system("pause");
-//	return 0;
-//}
+æ•°ç»„å‡½æ•°
+#include<stdio.h>
+#include<windows.h>
+void Init(int arr[], int sz)
+{
+    int i = 0;
+	for (i = 0; i < sz; i++)
+	{
+		arr[i] = i;
+	}
+}
+void empty(int arr[],int sz)
+{
+	int i = 0;
+	for (i = 0; i < sz; i++)
+	{
+		arr[i] = 0;
+	}
+}
+void print(int arr[],int sz)
+{
+	int i = 0;
+	for (i = 0; i < sz; i++)
+	{
+		printf("%d", arr[i]);
+	}
+	printf("\n");
+}
+void reverse(int arr[], int sz)
+{
+	int left = 0;
+	int right = sz - 1;
+	while (left < right)
+	{
+		int temp;
+		temp = arr[left];
+		arr[left] = arr[right];
+		arr[right] = temp;
+		left++;
+		right--;
+	}
+}
+int main()
+{
+	int arr[10] = {0};
+	int sz = sizeof(arr) / sizeof(arr[0]);
+	Init(arr,sz);
+	printf("åˆå§‹åŒ–çš„æ•°ç»„ï¼š\n");
+	print(arr, sz);
+	empty(arr,sz);
+	printf("æ¸…ç©ºåçš„æ•°ç»„ï¼š\n");
+	print(arr, sz);
+	printf("é‡æ–°åˆå§‹åŒ–æ•°ç»„\n");
+	Init(arr, sz);
+	print(arr, sz);
+	reverse(arr,sz);
+	printf("é€†ç½®çš„æ•°ç»„ä¸ºï¼š\n");
+	print(arr, sz);
+	system("pause");
+	return 0;
+}
 
-//º¯ÊıÅĞ¶ÏËØÊı
-//#include<stdio.h>
-//#include<windows.h>
-//int is_prime(int n)
-//{
-//	int i = 0;
-//	for (i = 2; i < n; i++)
-//	{
-//		if (n%i == 0)
-//		{
-//			return 0;
-//		}
-//	}
-//	return 1;
-//}
-//int main()
-//{
-//	 int m = 0;
-//	 int num = 0;j
-//	 printf("ÇëÊäÈëÊı×Ö£º");
-//	 scanf_s("%d", &num);
-//	 m = is_prime(num);
-//	 if (m == 1)
-//	 {
-//		printf("%dÊÇËØÊı\n",num);
-//	 } 
-//	 else
-//	 {
-//		printf("%d²»ÊÇËØÊı\n",num);
-//	 }
-//	system("pause");
-//	return 0;
-//}
+å‡½æ•°åˆ¤æ–­ç´ æ•°
+#include<stdio.h>
+#include<windows.h>
+int is_prime(int n)
+{
+	int i = 0;
+	for (i = 2; i < n; i++)
+	{
+		if (n%i == 0)
+		{
+			return 0;
+		}
+	}
+	return 1;
+}
+int main()
+{
+	 int m = 0;
+	 int num = 0;j
+	 printf("è¯·è¾“å…¥æ•°å­—ï¼š");
+	 scanf_s("%d", &num);
+	 m = is_prime(num);
+	 if (m == 1)
+	 {
+		printf("%dæ˜¯ç´ æ•°\n",num);
+	 } 
+	 else
+  {
+		printf("%dä¸æ˜¯ç´ æ•°\n",num);
+	 }
+	system("pause");
+	return 0;
+}
